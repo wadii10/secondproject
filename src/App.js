@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import myPhoto from "./Photos/téléchargement (5).jpg"
+import myPhoto1 from "./Photos/téléchargement (6).jpg"
+import myPhoto3 from "./Photos/téléchargement.jpg"
+import myPhotos from "./Photos/téléchargement (7).jpg"
+import { ListePhotos } from "./Components/ListePhotos";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="row">
+        <div className="col-8">
+          <ListePhotos/>
+          <img src={myPhotos} alt="waiting..."/>
+          <img src={myPhoto1} alt="waiting..."/>
+          <img src={myPhoto} alt="waiting..."/>
+          <img src={myPhoto3} alt="waiting..."/>
+          </div>
+      </div>
     </div>
   );
 }
